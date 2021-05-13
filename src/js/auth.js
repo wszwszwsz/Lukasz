@@ -1,11 +1,15 @@
 // TODO : add auth
 
 const authUser = () => {
-    const cookies = document.cookie.split('; ').reduce((prev, current) => {
-        const [name, ...value] = current.split('=');
-        prev[name] = value.join('=');
-        return prev;
-      }, {});
+    const getCookies = () => {
+        return document.cookie.split('; ').reduce((prev, current) => {
+            const [name, ...value] = current.split('=');
+            prev[name] = value.join('=');
+            return prev;
+        }, {});
+    }
+
+    const cookies = getCookies();
 
     const { userAuthenticated } = cookies;
     console.log(userAuthenticated)
