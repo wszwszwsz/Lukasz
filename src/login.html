@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scate=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/users.js"></script>
+    <script defer src="js/users.js"></script>
+    <script defer src="js/auth.js"></script>
 </head>
 <body>
+
 
 <main id="main-holder">
     <h1 id="login-header">SVG Viewer</h1>
     <form id="login-form">
         <input type="text" name="username" id="username" placeholder="Username">
         <input type="password" name="password" id="password" placeholder="Password">
-        <button type="button" id="button1" onclick="getInfo()">Zaloguj</button>
+        <button type="submit" id="button1">Zaloguj</button>
     </form>
 </main>
 </body>
