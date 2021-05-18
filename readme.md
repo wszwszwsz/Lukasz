@@ -20,3 +20,13 @@ or if you have Python 3:
 cd src
 python -m http.server 8000
 ```
+
+To run DB locally:
+
+```bash 
+npm run db
+```
+
+TODO: improve on how to migrate etc.
+
+
