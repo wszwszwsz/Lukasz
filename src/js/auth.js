@@ -18,7 +18,7 @@ const authUser = () => {
     }
 }
 
-        // TODO: add logic to handle user coming from /index.html
+// TODO: add logic to handle user coming from /index.html
 
 
 document.onload = authUser();
