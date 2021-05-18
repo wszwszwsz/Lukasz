@@ -12,11 +12,13 @@ const authUser = () => {
     const cookies = getCookies();
 
     const { userAuthenticated } = cookies;
-    console.log(userAuthenticated)
-    debugger;
 
     if (!userAuthenticated) {
         window.location.href = "login.html";
     }
 }
+
+        // TODO: add logic to handle user coming from /index.html
+
+
 document.onload = authUser();
