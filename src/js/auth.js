@@ -15,14 +15,8 @@ const authUser = () => {
     console.log(userAuthenticated)
     debugger;
 
-    if (userAuthenticated) {
-        alert("Let's go!");
-        // window.location.href = "/index.html";
-        document.location.replace("/login.html");
-    } else {
-        // window.location.href = "/login.html";
-        document.location.replace("/index.html");
+    if (!userAuthenticated) {
+        window.location.href = "login.html";
     }
 }
-
 document.onload = authUser();
